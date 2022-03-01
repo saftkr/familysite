@@ -22,12 +22,33 @@
   #사진
    {padding-top:10px; }
 
-
+  #버튼{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    color: black;
+  }
 
   </style>
 
 <body>
 <h1>승우와 다예</h1>
+ <dvi id="버튼">
+  <input type="button" name="" value="야간모드" color="black" onclick="
+  var target = document.querySelector('h1');
+    if(this.value === '야간모드'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '주간모드'; }
+
+    else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간모드';}
+    ">
+
+</dvi>
+
 <dvi id="목록">
   <ol>
     <a href="승우사진.jpg" target="_blank"><li>승우사진</li></a><br>
